@@ -1,0 +1,245 @@
+/* mobile & tablet */
+@media (max-width: 1023px){
+.hide-on-mobile-tablet{
+    display: none
+}
+.header__cart-list{
+    position:fixed;
+    width: 100%;
+    top: var(--header-height);
+    right: 0;
+    padding: 0 calc((100% - 644px) / 2);
+}
+.header__cart-list::after{
+    display: none;
+}
+.header{
+    position:fixed;
+    z-index: 10;
+    /* width: 100%; */
+    top:0;
+    left: 0;
+    right: 0;
+}
+.app__container{
+    margin-top:calc(var(--header-height) + var(--header-sort-bar-height) )
+}
+.header__sort-bar{
+    display: flex;
+}
+.app__content{
+    padding-top: 8px;
+}
+/* info */
+.header__list-item{
+    margin: 0 8px ;
+    position: relative;
+    min-height:26px;
+    }
+    
+ .header__list-item{
+    font-size:1.3rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight:400;
+    display: flex;
+ }
+ .header__list-use{
+    display: flex;
+    /* justify-content:center; */
+    cursor: pointer;
+}
+.header__list-use-img{
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    border:1px solid rgba(0,0,0,0.2);
+    margin-left: 10px;
+
+}
+.header__list-use-menu{
+    font-size: 1.2rem;
+    font-weight: 410;
+
+}
+.header__list-use:hover .header__list-use-menu{
+    display: block;
+}
+.header__list-use-menu{
+    position: absolute;
+    z-index: 1;
+    top: calc(100% + -5px);
+    right: 0;
+    background-color:var(--white-color);
+    border-radius: 2px;
+    width: 192px;
+    list-style: none;
+    padding-left: 0;
+box-shadow: 0 1px 2px #e0e0e0;
+display: none;
+right: -8px;
+}
+
+.header__list-use-item--sesparate{
+    border-top: 1px solid rgba(0,0,0,0.2) ;
+    }
+    .header__list-use-item-name a {
+        color:var(--primary-color);
+        text-decoration: none;
+        font-size:500;
+        padding:4px 16px;
+        display: block;
+    }
+    .header__list-use-item-name{
+        display:flex;
+    }
+    .header__list-use-item a{
+        text-decoration: none;
+        color: var(--text-color);
+        font-size:500;
+        padding:4px 16px;
+        display: block;
+    }
+    .header__list-use-item a:first-child{
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+    }
+    .header__list-use-item a:last-child{
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+    }
+    .header__list-use-item a:hover{
+background-color: #fafafa;
+color: rgba(0,0,0,0.2);
+}
+
+
+}
+/* tablet */
+@media(min-width:740px) and (max-width:1023px){
+    :root{
+        --header-height: 70px;
+        --navbar-height: 0px;
+    }
+.hide-on-tablet{
+    display: none
+}
+.header__cart{
+    width: 80px;
+    text-align: right;
+}
+.header__search-history{
+    width: 100%;
+}
+.footer__download-apps-img{
+    height:35px;
+    
+}
+.header__navbar-user-menu-tablet::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top:35px;
+    right: 0;
+    width:115%;
+    height: 17px;
+}
+
+}
+/* mobile */
+@media (max-width: 739px){
+    :root{
+        --header-height: 54px;
+        --navbar-height: 0px;
+    }
+.hide-on-mobile{
+    display: none;
+}
+.header-with-search{
+    justify-content: space-between;
+}
+.header__logo,.header__cart{
+    width: unset;
+}
+.header__search{
+    position:fixed;
+    left: 0;
+    top: var(--header-height);
+    right: 0;
+    height: 46px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+    border-radius: 2px ;
+    padding: 0 16px; 
+    margin: 0px 8px;
+    animation: mobileSearchInside linear .3s;
+    display: none;
+}
+.header__search-history{
+    width: 100%;
+    position:fixed;
+    left: 0;
+    top: calc(var(--header-height) + var(--header-sort-bar-height));
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+@keyframes mobileSearchInside{
+    from {
+        top: calc(var(--header-height) / 2 );
+        opacity: 0;
+    }
+    to{
+        top: var(--header-height);
+        opacity: 1;
+    }
+}
+.header__search-checkbox:checked ~ .header__search{
+    display: flex;
+}
+.header__search-listcheckbox ~ .header-list-content{
+    display:block;
+}
+
+.pagination-item__link {
+    font-size: 1.4rem;
+    min-width: 42px;
+    height: 28px;
+    line-height: 28px;
+}
+.pagination-item{
+    margin: 0 0px;
+}
+.app__content{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.header__logo-img{
+    width:110px;
+}
+.footer{
+    margin-top:60px;
+}
+.footer-content-mobile{
+    padding: 0 16px;
+}
+.footer__heading{
+    text-align:center;
+}
+.footer__download,
+.footer-item-link{
+    justify-content:center;
+}
+.footer__download-apps{
+    flex:unset;
+}
+.footer__download-apps-img{
+    height:35px;
+}
+}
+
+/* Pc */
+@media(min-width: 1024px){
+.hide-on-PC{
+    display: none;
+}
+
+}

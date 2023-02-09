@@ -1,0 +1,65 @@
+
+.home-login{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.ti-home{
+    color: #333; 
+    font-size: 1.5rem; 
+    margin-left:60px; 
+    cursor:pointer;
+}
+.list-login{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfz0G-JcfS2dPt0WJZ_O67rFb0ShVkgYEjBKoVm8xenPwG0mABNm-lIH_0wJ0UJQzE8JM&usqp=CAU);
+    width: 14%;
+    border-radius: 5px ;
+    margin: 15% auto;
+
+}
+.form-email{
+margin-bottom: 10px;
+padding : 10px;
+}
+.form-password{
+    margin-bottom: 10px;
+padding : 10px;
+
+}
+.btn{
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 15px 10px 15px 30px ;
+
+}
+.input-password{
+    height: 22px;
+    width: 90%;
+    margin-top:10px;
+}
+.btn-link{
+    text-decoration:none; color: #333;
+}
+.link-admin{
+    margin-left: 30px;
+    padding-bottom: 20px;
+}
+.link-admin a {
+    font-size:1.2rem;
+}
+.link-access a {
+    text-decoration: none; 
+    color: #5C5696;
+}
+.link-access  {
+    text-decoration: none; 
+    color: #5C5696;
+    border: 3px solid #5C5696;
+    opacity: 1;
+}
+.link-access:hover  {
+    text-decoration: none; 
+    color: #5C5696;
+    border: 3px solid #5C5696;
+    opacity: 0.9;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script src="/js/validation.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/signup-admin.css">
+
+</head>
+<body >
+    
+    <form action="./process-signup.php" method="post" id="signup" novalidate >
+  
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <div class="login">
+        <h1 class="heading-login">Sign up Admin</h1>
+                    <div class="login__field">
+                    
+                        <input type="text" id="name" name="name"  class="login__input" placeholder="Enter Name" >
+                    </div>
+                    <div class="login__field">
+                        
+                        <input type="email" id="email" class="login__input" name="email"  placeholder="Enter Email" >
+                    </div>
+                    <div class="login__field">
+                        
+                       
+                        <input type="password" id="password" class="login__input" name="password"  placeholder="Enter Password" >
+                    </div>
+                    <div class="login__field">
+                     
+                            <input type="password" class="login__input" id="password_confirmation" name="password_confirmation"  placeholder="Enter Repeat password" >
+                    </div>
+                    <button class="button login__submit">
+                        <span class="button__text">Sign up</span>
+                    </button>	
+                    <button class="button login__submit">
+                        <a href="./login-admin.php"> Login </a>
+                    </button>				
+                </div>
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>		
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>		
+        </div>
+    </div>
+</form>
+
+        
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+

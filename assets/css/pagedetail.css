@@ -1,0 +1,21 @@
+
+.content-detail{
+margin: 20px;
+}
+.content-detail__header{
+    
+
+}
+.content-detail_price{
+}
+.content-detail-link{
+    align-items: center;
+    justify-content: center;
+}
+.content-detail-btn{
+
+}
+.content-detail-img{
+    width:500px;
+    height:500px;
+}
